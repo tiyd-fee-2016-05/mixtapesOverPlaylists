@@ -53,7 +53,9 @@ $textColor: black;
 $fontLogo: 'Permanent Marker', cursive;
 $fontContent: 'Space Mono', monospace;
 
-
+body{
+  background-color: #fafafa;
+}
 .container{
   width: 1120px;
   margin-left: auto;

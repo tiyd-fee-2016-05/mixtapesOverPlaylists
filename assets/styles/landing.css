@@ -45,6 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  background-color: #fafafa; }
+
 .container {
   width: 1120px;
   margin-left: auto;
@@ -92,6 +95,10 @@ table {
       text-decoration: none;
       color: white;
       font-size: 1.25em; }
+    .content button .admin {
+      border-top-right-radius: 20px; }
+    .content button .store {
+      border-bottom-left-radius: 20px; }
   .content :hover {
     background-color: lightgrey; }
     .content :hover a {

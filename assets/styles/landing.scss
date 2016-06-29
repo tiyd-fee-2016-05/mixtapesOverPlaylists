@@ -53,7 +53,9 @@ $headerColor: #d234f0;
 $textColor: black;
 $fontLogo: 'Permanent Marker', cursive;
 $fontContent: 'Space Mono', monospace;
-
+body{
+  background-color: #fafafa;
+}
 .container{
   width: 1120px;
   margin-left: auto;
@@ -112,8 +114,11 @@ $fontContent: 'Space Mono', monospace;
       font-size: 1.25em;
     }
 
+    .admin{
+      border-top-right-radius: 20px;
+    }
     .store{
-      // margin-left: 50px;
+      border-bottom-left-radius: 20px;
     }
   }
   :hover {
