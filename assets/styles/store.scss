@@ -76,9 +76,14 @@ $modalbg: #f2f2f2;
 $activemodalbg:#666;
 
 
+body{
+  background-color: #fafafa;
+}
+
 .container{
   @include container;
   width: 1120px;
+
 }
 
 .header{
