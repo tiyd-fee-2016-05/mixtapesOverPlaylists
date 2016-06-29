@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,112 +15,86 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+  content: '';
+  content: none; }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-///END OF RESET
-
-$headerColor: #d234f0;
-$textColor: black;
-$fontLogo: 'Permanent Marker', cursive;
-$fontContent: 'Space Mono', monospace;
-
-.container{
+.container {
   width: 1120px;
   margin-left: auto;
-  margin-right: auto;
-}
-.header{
+  margin-right: auto; }
+
+.header {
   height: 250px;
-  background-color: $headerColor;
-  width: 100%;
-  .logo{
-    font-family: $fontLogo;
+  background-color: #d234f0;
+  width: 100%; }
+  .header .logo {
+    font-family: "Permanent Marker", cursive;
     font-size: 3em;
     text-align: center;
     color: white;
-    padding-top: 150px;
-  }
-}
-.background{
+    padding-top: 150px; }
+
+.background {
   position: absolute;
   opacity: .5;
   margin-left: 150px;
   margin-top: 0px;
-  z-index: -5;
-}
+  z-index: -5; }
+
 .content {
-  // position: absolute;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  z-index: 5;
-
-  input{
+  z-index: 5; }
+  .content input {
     display: block;
     margin-left: 190px;
     width: 30%;
-    margin-bottom: 5px;
-    // border: 2px solid #666;
-  }
-  // justify-content: center;
-  button{
+    margin-bottom: 5px; }
+  .content button {
     height: 2.1em;
     width: 25%;
     display: block;
     margin-left: 205px;
-    // background-color: white;
     background-color: #666;
     border-style: none;
     box-shadow: none;
-    border-radius: none;
-    // margin-bottom: 2px;
-
-    a{
+    border-radius: none; }
+    .content button a {
       text-decoration: none;
       color: white;
-      font-size: 1.25em;
-    }
+      font-size: 1.25em; }
+  .content :hover {
+    background-color: lightgrey; }
+    .content :hover a {
+      color: #666; }
 
-    .store{
-      // margin-left: 50px;
-    }
-  }
-  :hover {
-    background-color: lightgrey;
-    a{
-    color: #666;
-  }
-  }
-
-
-}
+/*# sourceMappingURL=landing.css.map */
