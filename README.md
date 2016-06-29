@@ -2,7 +2,6 @@
 
 #Styles
 
-###1.color scheme
 * background color header = #d234f0
 * text color - header = white/black/grey
 * font family - logo/customtitle = PermanentMarker
