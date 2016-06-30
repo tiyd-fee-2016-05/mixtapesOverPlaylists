@@ -65,56 +65,19 @@ body {
     color: white;
     padding-top: 20px; }
 
-.cartHead {
-  display: inline-block;
-  width: 100%;
-  margin-top: 20px;
-  font-weight: 700;
-  font-family: "Space Mono", monospace;
-  border-bottom: 1px solid lightgray; }
-  .cartHead li {
-    display: inline-block;
-    width: 20%;
-    border-right: 1px solid black; }
-  .cartHead .quantity {
-    width: 5%; }
-  .cartHead .subTotal {
-    margin-left: 90px;
-    border-right: none; }
+.invoice {
+  text-align: center; }
+  .invoice h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px; }
 
-.cartContent {
-  display: inline-block;
-  width: 100%;
-  margin-top: 20px;
-  font-family: "Space Mono", monospace;
-  border-bottom: 1px solid lightgray; }
-  .cartContent li {
-    display: inline-block;
-    width: 20%;
-    height: 1em;
-    overflow: hidden; }
-  .cartContent .quantity {
-    width: 5%; }
-  .cartContent .subTotal {
-    margin-left: 100px; }
+.shopMore {
+  width: 150px;
+  text-align: center;
+  font-size: 1.25em;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto; }
 
-.checkout {
-  width: 88%;
-  text-align: right;
-  padding-right: 500px; }
-  .checkout .total {
-    padding: 15px 0px;
-    font-weight: 700; }
-  .checkout .checkoutButton {
-    width: 10%;
-    text-align: center;
-    height: 22px;
-    background: #d234f0;
-    color: white;
-    margin-left: 88%; }
-    .checkout .checkoutButton :hover {
-      height: 22px;
-      background-color: lightgrey;
-      color: #d234f0; }
-
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=receipt.css.map */

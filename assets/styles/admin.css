@@ -98,23 +98,11 @@ body {
   .cartContent .subTotal {
     margin-left: 100px; }
 
-.checkout {
-  width: 88%;
-  text-align: right;
-  padding-right: 500px; }
-  .checkout .total {
-    padding: 15px 0px;
-    font-weight: 700; }
-  .checkout .checkoutButton {
-    width: 10%;
-    text-align: center;
-    height: 22px;
-    background: #d234f0;
-    color: white;
-    margin-left: 88%; }
-    .checkout .checkoutButton :hover {
-      height: 22px;
-      background-color: lightgrey;
-      color: #d234f0; }
+.add {
+  width: 40px;
+  border: 1px solid black;
+  margin: 10px 0px;
+  padding: 10px 10px;
+  text-align: center; }
 
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=admin.css.map */
