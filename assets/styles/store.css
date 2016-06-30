@@ -50,6 +50,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  background-color: #fafafa; }
+
 .container {
   max-width: 1120px;
   margin-left: auto;
@@ -78,8 +81,7 @@ table {
   float: left;
   margin-right: 1.26582%;
   display: inline-block;
-  position: relative;
-  margin-left: 55px;
+  margin-left: 18px;
   vertical-align: top;
   font-family: "Space Mono", monospace; }
   .items div {
@@ -87,24 +89,29 @@ table {
     float: left;
     margin-right: 1.26582%;
     width: 250px;
-    height: 250px;
-    border: 2px solid gray; }
+    height: 250px; }
     .items div img {
       position: absolute;
       height: 250px;
       width: 250px;
       opacity: .25;
       z-index: -999; }
+    .items div a {
+      height: 250px;
+      width: 250px;
+      z-index: 100; }
   .items :hover img {
     opacity: .75; }
   .items button {
+    font-family: "Space Mono", monospace;
+    font-size: 1em;
     margin-top: 200px;
     margin-left: 85px;
     width: 80px;
     height: 40px;
     border-style: none;
     background-color: #DECEE1;
-    z-index: 9999;
+    z-index: 99;
     border-radius: 7%; }
 
 .sidebar {
@@ -116,11 +123,33 @@ table {
   height: 750px;
   background-color: #DECEE1;
   margin-left: 0; }
-  .sidebar button {
-    border-style: none;
-    background-color: #DECEE1;
-    font-family: "Permanent Marker", cursive;
-    font-size: 2.5em;
-    margin-left: 20px; }
+  .sidebar img {
+    padding-left: 60px; }
+    .sidebar img:hover {
+      transform: rotateX(360deg);
+      transition-duration: 1.2s; }
+
+#top-ul {
+  height: 750px;
+  margin: 0 25px; }
+
+.main {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.75em;
+  letter-spacing: 2px; }
+  .main:hover > ul {
+    display: block; }
+  .main a {
+    text-decoration: none; }
+
+.main:hover > ul {
+  display: block; }
+
+.sub {
+  display: none; }
+  .sub li {
+    font-family: "Space Mono", monospace;
+    font-size: .6em;
+    padding-left: 15px; }
 
 /*# sourceMappingURL=store.css.map */

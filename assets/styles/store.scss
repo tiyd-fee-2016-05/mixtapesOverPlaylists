@@ -76,9 +76,14 @@ $modalbg: #f2f2f2;
 $activemodalbg:#666;
 
 
+body{
+  background-color: #fafafa;
+}
+
 .container{
   @include container;
   width: 1120px;
+
 }
 
 .header{
@@ -96,27 +101,33 @@ $activemodalbg:#666;
     padding-top: 20px;
 
   }
+
 }
 
 .items{
   @include span(12);
   display: inline-block;
-  position: relative;
+  // position: relative;
   // width: 75%;
-  margin-left: 55px;
+  margin-left: 18px;
   vertical-align: top;
   font-family: $menufont;
 div{
   @include span(4);
   width:250px;
   height:250px;
-  border: 2px solid gray;
+  // border: 2px solid gray;
   img{
     position: absolute;
     height: 250px;
     width: 250px;
     opacity: .25;
     z-index: -999;
+  }
+  a{
+    height: 250px;
+    width: 250px;
+    z-index: 100;
   }
 }
 :hover{
@@ -126,16 +137,21 @@ div{
 }
 button{
   // position: absolute;
+  font-family: $menufont;
+  font-size: 1em;
   margin-top: 200px;
   margin-left: 85px;
   width: 80px;
   height:40px;
   border-style: none;
   background-color: $barcolor;
-  z-index: 9999;
+  z-index: 99;
   border-radius: 7%;
 }
 }
+
+
+
 
 .sidebar{
   @include span(3);
@@ -145,11 +161,48 @@ button{
   height: 750px;
   background-color: $barcolor;
   margin-left: 0;
-  button{
-    border-style: none;
-    background-color: $barcolor;
-    font-family: $tapefont;
-    font-size: 2.5em;
-    margin-left: 20px;
+  img{
+    padding-left: 60px;
+    &:hover{
+      transform: rotateX(360deg);
+      transition-duration: 1.2s;
+    }
   }
+
+}
+
+#top-ul{
+  height: 750px;
+  margin: 0 25px;
+}
+
+.main{
+  &:hover > ul {
+    display: block;
+  }
+  font-family: $tapefont;
+  font-size: 1.75em;
+  letter-spacing: 2px;
+  a{
+    text-decoration: none;
+
+  }
+
+}
+.main:hover > ul {
+
+    display:block;
+
+}
+
+
+.sub{
+  display: none;
+
+  li{
+    font-family: $menufont;
+    font-size: .6em;
+    padding-left: 15px;
+  }
+
 }
