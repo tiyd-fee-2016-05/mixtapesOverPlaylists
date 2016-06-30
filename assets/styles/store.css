@@ -81,7 +81,7 @@ body {
   float: left;
   margin-right: 1.26582%;
   display: inline-block;
-  margin-left: 55px;
+  margin-left: 18px;
   vertical-align: top;
   font-family: "Space Mono", monospace; }
   .items div {
@@ -89,8 +89,7 @@ body {
     float: left;
     margin-right: 1.26582%;
     width: 250px;
-    height: 250px;
-    border: 2px solid gray; }
+    height: 250px; }
     .items div img {
       position: absolute;
       height: 250px;
@@ -104,6 +103,8 @@ body {
   .items :hover img {
     opacity: .75; }
   .items button {
+    font-family: "Space Mono", monospace;
+    font-size: 1em;
     margin-top: 200px;
     margin-left: 85px;
     width: 80px;
@@ -125,7 +126,8 @@ body {
   .sidebar img {
     padding-left: 60px; }
     .sidebar img:hover {
-      transform: rotateZ(5deg); }
+      transform: rotateX(360deg);
+      transition-duration: 1.2s; }
 
 #top-ul {
   height: 750px;

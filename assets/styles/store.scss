@@ -109,14 +109,14 @@ body{
   display: inline-block;
   // position: relative;
   // width: 75%;
-  margin-left: 55px;
+  margin-left: 18px;
   vertical-align: top;
   font-family: $menufont;
 div{
   @include span(4);
   width:250px;
   height:250px;
-  border: 2px solid gray;
+  // border: 2px solid gray;
   img{
     position: absolute;
     height: 250px;
@@ -137,6 +137,8 @@ div{
 }
 button{
   // position: absolute;
+  font-family: $menufont;
+  font-size: 1em;
   margin-top: 200px;
   margin-left: 85px;
   width: 80px;
@@ -162,8 +164,8 @@ button{
   img{
     padding-left: 60px;
     &:hover{
-      transform: rotateZ(5deg);
-
+      transform: rotateX(360deg);
+      transition-duration: 1.2s;
     }
   }
 
