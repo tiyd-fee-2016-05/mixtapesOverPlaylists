@@ -12,7 +12,8 @@ mOverP.config(function($routeProvider) {
     templateUrl: 'index/admin.html'
   })
   .when('/store',{
-    templateUrl:'index/store.html'
+    templateUrl:'index/store.html',
+    controller: 'modal'
   })
   .when('/receipt',{
     templateUrl: 'index/receipt.html'
