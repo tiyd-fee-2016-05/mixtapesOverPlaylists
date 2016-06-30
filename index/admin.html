@@ -10,11 +10,20 @@
           <li class="price">Price</li>
         </ul>
         <ul class="cartContent">
-          <li class="title"><input type="text"></input></li>
-          <li class="artist"><input type="text"></input></li>
-          <li class="price"><input type="number"></input></li>
+        <!-- <form type="text"> -->
+          <li class="title"><input type="text"  runat="server" ng-model="titleInput"></input></li>
+          <li class="artist"><input type="text" runat="server" ng-model="artistInput"></input></li>
+          <li class="price"><input type="text" runat="server" ng-model="priceInput"></input></li>
+        <!-- </form> -->
         </ul>
-          <div class="add">
+        <ul class="cartContent" ng-repeat="data in data">
+        <!-- <form type="text"> -->
+          <li class="title" ng-model="savedTitle">{{data.title}}</li>
+          <li class="artist" ng-model="savedArtist">{{data.artist}}</li>
+          <li class="price" ng-model="savedPrice">{{data.price}}</li>
+        <!-- </form> -->
+        </ul>
+          <div class="add" ng-click="addFunc()">
             <p>Add</p>
           </div>
 

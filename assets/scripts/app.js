@@ -9,7 +9,8 @@ mOverP.config(function($routeProvider) {
     templateUrl:'index/cart.html'
   })
   .when('/admin',{
-    templateUrl: 'index/admin.html'
+    templateUrl: 'index/admin.html',
+    controller: 'admin'
   })
   .when('/store',{
     templateUrl:'index/store.html',
