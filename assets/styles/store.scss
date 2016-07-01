@@ -104,6 +104,12 @@ body{
 
 }
 
+#searchBar{
+  float: right;
+  padding-top: 22px;
+  padding-right: 10px;
+}
+
 .items{
   @include span(12);
   display: inline-block;
@@ -115,31 +121,39 @@ body{
 div{
   @include span(4);
   width:250px;
-  height:250px;
+  height:260px;
   // border: 2px solid gray;
+  ul{
+    visibility: hidden
+  }
   img{
     position: absolute;
     height: 250px;
     width: 250px;
-    opacity: .25;
+    opacity: 1;
     z-index: -999;
   }
   a{
     height: 250px;
     width: 250px;
     z-index: 100;
+    text-decoration-style: none;
   }
+
 }
 :hover{
+  ul{
+    visibility: visible;
+  }
   img{
-    opacity: .75;
+    opacity: .25;
   }
 }
 button{
   // position: absolute;
   font-family: $menufont;
   font-size: 1em;
-  margin-top: 200px;
+  margin-top: 209px;
   margin-left: 85px;
   width: 80px;
   height:40px;
@@ -147,6 +161,7 @@ button{
   background-color: $barcolor;
   z-index: 99;
   border-radius: 7%;
+  opacity: .8;
 }
 }
 
@@ -179,6 +194,7 @@ button{
 .main{
   &:hover > ul {
     display: block;
+
   }
   font-family: $tapefont;
   font-size: 1.75em;
@@ -189,20 +205,82 @@ button{
   }
 
 }
-.main:hover > ul {
 
-    display:block;
 
-}
+// .main:hover > ul {
+//
+//     display:block;
+//
+// }
 
 
 .sub{
   display: none;
-
+  &:hover > ul{
+    text-decoration-style: double;
+  }
   li{
     font-family: $menufont;
     font-size: .6em;
     padding-left: 15px;
+
   }
 
+}
+
+.modal{
+  position: absolute;
+  font-family: "Space Mono", monospace;
+  height: 750px;
+  width: 921px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  -webkit-transition: opacity 800ms ease-in;
+  -moz-transition: opacity 800ms ease-in;
+  transition: opacity 800ms ease-in;
+  pointer-events: none;
+  margin-left: -1.5%;
+div{
+  width:70%;
+  height: 100%;
+  background-color: $modalbg;
+  margin-left: 15%;
+  // margin-top: 10%;
+
+}
+h1{
+  text-align: center;
+  font-family: $tapefont;
+  font-size: 2.2em;
+  padding-top: 5%;
+}
+button{
+  border-style: none;
+  height: 40px;
+  width: 80px;
+  font-family: $menufont;
+  font-size: .3em;
+  position: absolute;
+  margin-top: -67px;
+  margin-left: 112px;
+}
+}
+
+.tracks{
+  margin-left: 49%;
+  margin-top: 32%;
+  margin-bottom: 20%;
+  line-height: 2;
+  span{
+    img{
+    z-index: 800;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    margin: -8% -31%;
+  }
+  }
+li{
+    padding-left: 40px;
+}
 }
