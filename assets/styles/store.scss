@@ -108,6 +108,7 @@ body{
   float: right;
   padding-top: 22px;
   padding-right: 10px;
+  
 }
 
 .items{
@@ -123,8 +124,8 @@ div{
   width:250px;
   height:260px;
   // border: 2px solid gray;
-  ul{
-    visibility: hidden
+  .hide{
+    display: none;
   }
   img{
     position: absolute;
@@ -142,8 +143,18 @@ div{
 
 }
 :hover{
-  ul{
-    visibility: visible;
+  .hide{
+    position: absolute;
+    display: block;
+    height: 250px;
+    width: 250px;
+    padding-top: 50px;
+    // padding-left: 60px;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.4;
+    // overflow: visible;
+    // z-index: 100;
   }
   img{
     opacity: .25;
@@ -267,7 +278,7 @@ button{
 }
 
 .tracks{
-  margin-left: 49%;
+  margin-left: 300px;
   margin-top: 32%;
   margin-bottom: 20%;
   line-height: 2;
