@@ -76,6 +76,11 @@ body {
     text-align: center;
     padding-top: 20px; }
 
+#searchBar {
+  float: right;
+  padding-top: 22px;
+  padding-right: 10px; }
+
 .items {
   width: 74.68354%;
   float: left;
@@ -89,30 +94,36 @@ body {
     float: left;
     margin-right: 1.26582%;
     width: 250px;
-    height: 250px; }
+    height: 260px; }
+    .items div ul {
+      visibility: hidden; }
     .items div img {
       position: absolute;
       height: 250px;
       width: 250px;
-      opacity: .25;
+      opacity: 1;
       z-index: -999; }
     .items div a {
       height: 250px;
       width: 250px;
-      z-index: 100; }
+      z-index: 100;
+      text-decoration-style: none; }
+  .items :hover ul {
+    visibility: visible; }
   .items :hover img {
-    opacity: .75; }
+    opacity: .25; }
   .items button {
     font-family: "Space Mono", monospace;
     font-size: 1em;
-    margin-top: 200px;
+    margin-top: 209px;
     margin-left: 85px;
     width: 80px;
     height: 40px;
     border-style: none;
     background-color: #DECEE1;
     z-index: 99;
-    border-radius: 7%; }
+    border-radius: 7%;
+    opacity: .8; }
 
 .sidebar {
   width: 17.72152%;
@@ -142,14 +153,59 @@ body {
   .main a {
     text-decoration: none; }
 
-.main:hover > ul {
-  display: block; }
-
 .sub {
   display: none; }
+  .sub:hover > ul {
+    text-decoration-style: double; }
   .sub li {
     font-family: "Space Mono", monospace;
     font-size: .6em;
     padding-left: 15px; }
+
+.modal {
+  position: absolute;
+  font-family: "Space Mono", monospace;
+  height: 750px;
+  width: 921px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  -webkit-transition: opacity 800ms ease-in;
+  -moz-transition: opacity 800ms ease-in;
+  transition: opacity 800ms ease-in;
+  pointer-events: none;
+  margin-left: -1.5%; }
+  .modal div {
+    width: 70%;
+    height: 100%;
+    background-color: #f2f2f2;
+    margin-left: 15%; }
+  .modal h1 {
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2.2em;
+    padding-top: 5%; }
+  .modal button {
+    border-style: none;
+    height: 40px;
+    width: 80px;
+    font-family: "Space Mono", monospace;
+    font-size: .3em;
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 112px; }
+
+.tracks {
+  margin-left: 49%;
+  margin-top: 32%;
+  margin-bottom: 20%;
+  line-height: 2; }
+  .tracks span img {
+    z-index: 800;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    margin: -8% -31%; }
+  .tracks li {
+    padding-left: 40px; }
 
 /*# sourceMappingURL=store.css.map */

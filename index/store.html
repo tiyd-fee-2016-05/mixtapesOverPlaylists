@@ -1,9 +1,13 @@
 
       <div class="container">
         <div class="header">
+          <form id="searchBar">
+            Search: <input type="text" name="searchBar">
+            <input type="submit">
+          </form>
           <h1>
             Mixtapes > Playlists</h1>
-        </div>
+                  </div>
         <div class="sidebar">
           <div class="dropdown">
           <img src="../assets/imgs/multimedia.png">
@@ -12,17 +16,17 @@
              <li class="main"><a href="">Genres</a>
 
                  <ul class="sub">
-                     <li><a>Rock</a>
+                     <li><a href="#">Rock</a>
                      </li>
-                     <li><a>Pop</a>
+                     <li><a href="#">Pop</a>
                      </li>
-                     <li><a>Hip/Hop</a>
+                     <li><a href="#">Hip/Hop</a>
                      </li>
-                     <li><a>Country</a>
+                     <li><a href="#">Country</a>
                      </li>
-                     <li><a>Electronic</a>
+                     <li><a href="#">Electronic</a>
                      </li>
-                     <li><a>Country</a>
+                     <li><a href="#">Country</a>
                      </li>
                  </ul>
              </li>
@@ -31,9 +35,9 @@
              <li class="main"><a href="">Curated Playlists</a>
 
                  <ul class="sub">
-                     <li><a>Mixes by Aaron</a>
+                     <li><a href="#">Mixes by Aaron</a>
                      </li>
-                     <li><a>Mixes by Travis</a>
+                     <li><a href="#">Mixes by Travis</a>
                      </li>
                  </ul>
              </li>
@@ -48,24 +52,44 @@
 
               <!-- Row 1 -->
               <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/astley.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
               </div>
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/stevensegal.jpg">
               </a>
                 <button><a href="/#cart">BUY</a></button>
               </div>
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/joyce.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
             </div>
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/kenny.jpg">
               </a>
@@ -73,39 +97,75 @@
             </div>
 
               <!-- Row 2 -->
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/gunther.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
               </div>
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/djpaypal.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
               </div>
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/leaflady.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
               </div>
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/shatner.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
               </div>
-              <div>
+              <div ng-click="modalFunc()">
+                <ul>
+                <li class="desc">Artist Name</li>
+                <li class="desc">Title</li>
+                <li class="desc">Artist Name</li>
+              </ul>
                 <a href="#text">
                 <img src="../assets/imgs/pullmyfinger.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
               </div>
-            <div class="modal" ng-show="showMenu">
-              
-            </div>
+            <section class="modal" ng-show="showMenu">
+              <div>
+                <h1>Rick Astley - "Never Gonna Give You Up"</h1>
+                <ul class="tracks">
+                  <span><img src="../assets/imgs/astley.jpg"></span>
+                  <li>1. Never Gonna Give You Up.</li>
+                  <li>2. Never Gonna Let You Down.</li>
+                  <li>3. Never Gonna Run Around.</li>
+                  <li>4. Or Desert You.</li>
+                </ul>
+                <button class="addTo"><a href="/#cart">ADD TO MY MIX</a></button>
+              </div>
+
+            </section>
 
 
 
