@@ -51,7 +51,8 @@
           <div class="items">
 
               <!-- Row 1 -->
-              <div ng-click="modalFunc(); setActive(album)" ng-repeat="album in albums">
+              <div ng-repeat="album in albums" ng-click="setActive(album)" ng-hide="showItems">
+                <p ng-click="modalFunc()"><i class="expand fa fa-arrows-alt" aria-hidden="true"></i></p>
                 <ul class="hide">
                 <li class="desc">{{album.artist}}</li>
                 <li class="desc">{{album.title}}</li>
@@ -159,9 +160,10 @@
 
 
 
-    <section class="modal" ng-show="showMenu">
+    <section  class="modal" ng-show="showMenu">
       <div>
-        <h1>{{albums.artist}} - {{albums.title}}</h1>
+        <p class="exit" ng-click="modalFunc()"><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></p>
+        <h1>{{albumMod.artist}} - {{albumMod.title}}</h1>
         <ul class="tracks">
           <span><img src="../assets/imgs/astley.jpg"></span>
           <li>Runtime:</li>
@@ -172,6 +174,7 @@
         <form style="display: inline" action="/#cart" method="get">
         <button ng-click="cartFunc()"><a class="addTo">ADD TO MY MIX</a></button>
       </form>
+
       </div>
     </div>
 

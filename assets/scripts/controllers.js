@@ -6,19 +6,16 @@
 // });
 
 mOverP.controller('store', function($scope, $http ){
-  //MODAL!!!!!//////////
+  ////MODAL!!!!!//////////
 
-  // $scope.showMenu=false;
-  // $scope.modalFunc= function(){
-  //   $scope.showMenu = !$scope.showMenu;
-  // };
+
 
 
 
 
   ////RANDOM word to creat 9 tracks/////
   var loadTrack= ["metal", "solid", "grind", "follow", "iron", "yard", "cats", "sailor%20moon", "dogs", "smoke", "mirror", "magic", "cool", "virtual", "reality", "phone", "lemon", "next", "banana",
-  "preacher", "shark", "romeo"  ];
+  "preacher", "shark", "romeo", "soccer", "freedom"  ];
   var searchRand= Math.floor((Math.random() * loadTrack.length));
   console.log(searchRand);
   $http({
@@ -89,10 +86,21 @@ mOverP.controller('store', function($scope, $http ){
     ////////Cart Post!!!!/////
     // $scope.selected = $scope.albums[0];
     // console.log($scope.selected);
+
      $scope.setActive = function(album){
        $scope.selected = album;
        console.log($scope.selected)
+       $scope.albumMod = $scope.selected;
+
      }
+     $scope.showMenu=false;
+     $scope.showItems=false;
+     $scope.modalFunc= function(){
+       $scope.showMenu = !$scope.showMenu;
+       console.log($scope.selected);
+       $scope.showItems = !$scope.showItems;
+       // console.log($scope.selected.attr("id"));
+     };
     //  $scope.isClicked= function(album){
     //    $scope.selected = album;
      //
