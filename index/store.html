@@ -51,7 +51,7 @@
           <div class="items">
 
               <!-- Row 1 -->
-              <div ng-click="modalFunc()" ng-repeat="album in albums">
+              <div ng-click="modalFunc(); setActive(album)" ng-repeat="album in albums">
                 <ul class="hide">
                 <li class="desc">{{album.artist}}</li>
                 <li class="desc">{{album.title}}</li>
@@ -60,7 +60,7 @@
                 <a href="#text">
                 <img src="{{album.img}}">
               </a>
-              <button><a href="/#cart">BUY</a></button>
+              <button ng-click="setActive(album); cartFunc()" id="{{album.id}}"><a>Add</a></button>
               </div>
               <!-- <div ng-click="modalFunc()">
                 <ul class="hide">
@@ -170,7 +170,7 @@
           <li>Album:</li>
         </ul>
         <form style="display: inline" action="/#cart" method="get">
-        <button><a class="addTo" href="/#cart">ADD TO MY MIX</a></button>
+        <button ng-click="cartFunc()"><a class="addTo">ADD TO MY MIX</a></button>
       </form>
       </div>
     </div>
