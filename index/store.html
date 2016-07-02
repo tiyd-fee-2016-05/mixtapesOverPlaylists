@@ -53,9 +53,9 @@
               <!-- Row 1 -->
               <div ng-click="modalFunc()">
                 <ul class="hide">
-                <li class="desc">Artist Name</li>
-                <li class="desc">Title</li>
-                <li class="desc">Artist Name</li>
+                <li class="desc">{{albums[0].artist}}</li>
+                <li class="desc">{{albums[0].title}}</li>
+                <li class="desc">$1.29</li>
               </ul>
                 <a href="#text">
                 <img src="../assets/imgs/astley.jpg">
@@ -162,7 +162,9 @@
                   <li>3. Never Gonna Run Around.</li>
                   <li>4. Or Desert You.</li>
                 </ul>
-                <button class="addTo"><a href="/#cart">ADD TO MY MIX</a></button>
+                <form style="display: inline" action="/#cart" method="get">
+                <button><a class="addTo" href="/#cart">ADD TO MY MIX</a></button>
+              </form>
               </div>
 
             </section>
