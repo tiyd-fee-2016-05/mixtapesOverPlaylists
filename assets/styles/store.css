@@ -193,13 +193,14 @@ body {
     padding-top: 5%; }
   .modal button {
     border-style: none;
-    height: 40px;
-    width: 80px;
+    height: 49px;
+    width: 140px;
     font-family: "Space Mono", monospace;
-    font-size: .3em;
+    font-weight: 700;
+    font-size: 1em;
     position: absolute;
     margin-top: -67px;
-    margin-left: 112px; }
+    margin-left: 66px; }
 
 .tracks {
   margin-left: 300px;
