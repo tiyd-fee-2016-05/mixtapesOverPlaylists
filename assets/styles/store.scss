@@ -83,6 +83,7 @@ body{
 .container{
   @include container;
   width: 1120px;
+  z-index: -3939393939393;
 
 }
 
@@ -140,6 +141,10 @@ div{
     z-index: 100;
     text-decoration-style: none;
   }
+  .expand{
+    display: none;
+  }
+
 
 }
 :hover{
@@ -155,6 +160,11 @@ div{
     line-height: 1.4;
     // overflow: visible;
     // z-index: 100;
+  }
+  .fa-arrows-alt{
+    display: block;
+    position: absolute;
+    z-index:1000000;
   }
   img{
     opacity: .25;
@@ -245,7 +255,7 @@ button{
   height: 750px;
   width: 921px;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 99999;
+  z-index: 9999999;
   -webkit-transition: opacity 800ms ease-in;
   -moz-transition: opacity 800ms ease-in;
   transition: opacity 800ms ease-in;
@@ -275,6 +285,27 @@ button{
   position: absolute;
   margin-top: -67px;
   margin-left: 66px;
+}
+
+}
+
+.exit{
+  p{
+    // position: absolute;
+    display: inline-block;
+    z-index: 10000000000000000000000000000;
+    width: 20%;
+
+  }
+  i{
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-right: 35px;
+    margin-top: 27px;
+    z-index: 10000000000000000000000;
+
+
 }
 }
 
