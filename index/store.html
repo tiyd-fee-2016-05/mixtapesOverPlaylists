@@ -51,20 +51,20 @@
           <div class="items">
 
               <!-- Row 1 -->
-              <div ng-click="modalFunc()">
+              <div ng-click="modalFunc(); setActive(album)" ng-repeat="album in albums">
                 <ul class="hide">
-                <li class="desc">{{albums[0].artist}}</li>
-                <li class="desc">{{albums[0].title}}</li>
+                <li class="desc">{{album.artist}}</li>
+                <li class="desc">{{album.title}}</li>
                 <li class="desc">$1.29</li>
               </ul>
                 <a href="#text">
-                <img src="../assets/imgs/astley.jpg">
+                <img src="{{album.img}}">
               </a>
-              <button><a href="/#cart">BUY</a></button>
+              <button ng-click="setActive(album); cartFunc()" id="{{album.id}}"><a>Add</a></button>
               </div>
-              <div ng-click="modalFunc()">
+              <!-- <div ng-click="modalFunc()">
                 <ul class="hide">
-                <li class="desc">Rick Astley</li>
+                <li class="desc"></li>
                 <li class="desc">"Never Gonna Give You Up"</li>
                 <li class="desc">4:25</li>
               </ul>
@@ -96,7 +96,7 @@
               <button><a href="/#cart">BUY</a></button>
             </div>
 
-              <!-- Row 2 -->
+              Row 2
               <div ng-click="modalFunc()">
                 <ul class="hide">
                 <li class="desc">Artist Name</li>
@@ -151,28 +151,29 @@
                 <img src="../assets/imgs/pullmyfinger.jpg">
               </a>
               <button><a href="/#cart">BUY</a></button>
-              </div>
-            <section class="modal" ng-show="showMenu">
-              <div>
-                <h1>Rick Astley - "Never Gonna Give You Up"</h1>
-                <ul class="tracks">
-                  <span><img src="../assets/imgs/astley.jpg"></span>
-                  <li>1. Never Gonna Give You Up.</li>
-                  <li>2. Never Gonna Let You Down.</li>
-                  <li>3. Never Gonna Run Around.</li>
-                  <li>4. Or Desert You.</li>
-                </ul>
-                <form style="display: inline" action="/#cart" method="get">
-                <button><a class="addTo" href="/#cart">ADD TO MY MIX</a></button>
-              </form>
-              </div>
-
-            </section>
+            </div>--->
 
 
 
 
 
 
+
+    <section class="modal" ng-show="showMenu">
+      <div>
+        <h1>{{albums.artist}} - {{albums.title}}</h1>
+        <ul class="tracks">
+          <span><img src="../assets/imgs/astley.jpg"></span>
+          <li>Runtime:</li>
+          <li>Released:</li>
+          <li>Price:</li>
+          <li>Album:</li>
+        </ul>
+        <form style="display: inline" action="/#cart" method="get">
+        <button ng-click="cartFunc()"><a class="addTo">ADD TO MY MIX</a></button>
+      </form>
+      </div>
     </div>
+
+    </section>
   </div>
