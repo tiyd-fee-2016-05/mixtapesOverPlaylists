@@ -15,7 +15,7 @@ mOverP.controller('store', function($scope, $http ){
 
   ////RANDOM word to creat 9 tracks/////
   var loadTrack= ["metal", "solid", "grind", "follow", "iron", "yard", "cats", "sailor%20moon", "dogs", "smoke", "mirror", "magic", "cool", "virtual", "reality", "phone", "lemon", "next", "banana",
-  "preacher", "shark", "romeo", "soccer", "freedom"  ];
+  "preacher", "shark", "romeo", "soccer", "freedom", "random", "cartoon", "internet", "china", "water", "television", "sauce", "couch", "torch", "rainbow", "anchovy", "orange", "apple","past", "present",  ];
   var searchRand= Math.floor((Math.random() * loadTrack.length));
   console.log(searchRand);
   $http({
@@ -27,59 +27,76 @@ mOverP.controller('store', function($scope, $http ){
     $scope.albums = [{
       title: album.data.tracks.items[0].name,
       artist: album.data.tracks.items[0].artists[0].name,
-      img: album.data.tracks.items[0].album.images[1].url
+      img: album.data.tracks.items[0].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
       // id: 0
     },
     {
       title: album.data.tracks.items[1].name,
       artist: album.data.tracks.items[1].artists[0].name,
-      img: album.data.tracks.items[1].album.images[1].url
+      img: album.data.tracks.items[1].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 1
     },
     {
       title: album.data.tracks.items[2].name,
       artist: album.data.tracks.items[2].artists[0].name,
-      img: album.data.tracks.items[2].album.images[1].url
+      img: album.data.tracks.items[2].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 2
 
     },
     {
       title: album.data.tracks.items[3].name,
       artist: album.data.tracks.items[3].artists[0].name,
-      img: album.data.tracks.items[3].album.images[1].url
+      img: album.data.tracks.items[3].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 3
 
     },
     {
       title: album.data.tracks.items[4].name,
       artist: album.data.tracks.items[4].artists[0].name,
-      img: album.data.tracks.items[4].album.images[1].url
+      img: album.data.tracks.items[4].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 4
     },
     {
       title: album.data.tracks.items[5].name,
       artist: album.data.tracks.items[5].artists[0].name,
-      img: album.data.tracks.items[5].album.images[1].url
+      img: album.data.tracks.items[5].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 5
 
     },
     {
       title: album.data.tracks.items[6].name,
       artist: album.data.tracks.items[6].artists[0].name,
-      img: album.data.tracks.items[6].album.images[1].url
+      img: album.data.tracks.items[6].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 6
     },
     {
       title: album.data.tracks.items[7].name,
       artist: album.data.tracks.items[7].artists[0].name,
-      img: album.data.tracks.items[7].album.images[1].url
+      img: album.data.tracks.items[7].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 7
 
     },
     {
       title: album.data.tracks.items[8].name,
       artist: album.data.tracks.items[8].artists[0].name,
-      img: album.data.tracks.items[8].album.images[1].url
+      img: album.data.tracks.items[8].album.images[1].url,
+      album: album.data.tracks.items[0].album.name
+
       // id: 8
 
     }];
@@ -89,16 +106,18 @@ mOverP.controller('store', function($scope, $http ){
 
      $scope.setActive = function(album){
        $scope.selected = album;
-       console.log($scope.selected)
+       console.log($scope.selected);
        $scope.albumMod = $scope.selected;
 
-     }
+     };
+     $scope.closeMenu=true;
      $scope.showMenu=false;
      $scope.showItems=false;
      $scope.modalFunc= function(){
        $scope.showMenu = !$scope.showMenu;
        console.log($scope.selected);
        $scope.showItems = !$scope.showItems;
+       $scope.closeMenu=!$scope.closeMenu;
        // console.log($scope.selected.attr("id"));
      };
     //  $scope.isClicked= function(album){
@@ -110,7 +129,7 @@ mOverP.controller('store', function($scope, $http ){
         $http.post('http://localhost:3004/cart', $scope.addTrack)
         .success(function(addTack){
     });
-  }
+  };
 
     console.log($scope.albums);
     //console.log(i);
@@ -140,7 +159,7 @@ $scope.addFunc= function(){
     title: $scope.titleInput,
     artist: $scope.artistInput,
     price: $scope.priceInput
-  }
+  };
 
   console.log($scope.titleInput);
   //console.log(newData);
@@ -155,7 +174,7 @@ $scope.addFunc= function(){
   });
 
 
-}
+};
   // var data = {
   //   'title': $scope.titleInput,
   //   'artist': $scope.artistInput,

@@ -59,7 +59,7 @@
                 <li class="desc">$1.29</li>
               </ul>
                 <a href="#text">
-                <img src="{{album.img}}">
+                <img src={{album.img}}>
               </a>
               <button ng-click="setActive(album); cartFunc()" id="{{album.id}}"><a>Add</a></button>
               </div>
@@ -161,18 +161,16 @@
 
 
     <section  class="modal" ng-show="showMenu">
-      <div>
-        <p class="exit" ng-click="modalFunc()"><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></p>
+        <div ng-click="setActive(album)">
+        <p class="exit"><i  ng-click="closeMenu" class="fa fa-times-circle fa-2x" aria-hidden="true"></i></p>
         <h1>{{albumMod.artist}} - {{albumMod.title}}</h1>
         <ul class="tracks">
-          <span><img src="../assets/imgs/astley.jpg"></span>
-          <li>Runtime:</li>
-          <li>Released:</li>
-          <li>Price:</li>
-          <li>Album:</li>
+          <span><img src={{albumMod.img}}></span>
+          <li>Album: {{albumMod.album}}</li>
+          <li>Price: $1.29</li>
         </ul>
         <form style="display: inline" action="/#cart" method="get">
-        <button ng-click="cartFunc()"><a class="addTo">ADD TO MY MIX</a></button>
+          <button ng-click="setActive(album); cartFunc()" id="{{album.id}}"><a>Add</a></button>
       </form>
 
       </div>

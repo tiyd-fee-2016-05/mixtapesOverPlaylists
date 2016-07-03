@@ -262,10 +262,11 @@ button{
   pointer-events: none;
   margin-left: -1.5%;
 div{
-  width:70%;
-  height: 100%;
-  background-color: $modalbg;
-  margin-left: 15%;
+  width: 653px;
+  height: 606px;
+  background-color: #f2f2f2;
+  margin-left: 13%;
+  margin-top: 5%;
   // margin-top: 10%;
 
 }
@@ -283,7 +284,7 @@ button{
   font-weight: 700;
   font-size: 1em;
   position: absolute;
-  margin-top: -67px;
+  margin-top: -41px;
   margin-left: 66px;
 }
 
@@ -311,9 +312,9 @@ button{
 
 .tracks{
   margin-left: 300px;
-  margin-top: 32%;
-  margin-bottom: 20%;
-  line-height: 2;
+  margin-top: 121px;
+  margin-bottom: 130px;
+  line-height: 2;;
   span{
     img{
     z-index: 800;
@@ -324,6 +325,11 @@ button{
   }
   }
 li{
-    padding-left: 40px;
+    padding-left: 8px;
+    font-family: $tapefont;
+    font-size: 1.5em;
+    letter-spacing: 2;
+
+
 }
 }
