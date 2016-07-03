@@ -11,19 +11,20 @@
           <li class="quantity">Qt.</li>
           <li class="subTotal">Sub-total</li>
         </ul>
-        <ul class="cartContent">
-          <li class="title">Never Gonna Give You Up</li>
-          <li class="artist">Rick Astley</li>
-          <li class="price">$1.29</li>
-          <li class="quantity"><input type="number" value=1></input></li>
-          <li class="subTotal">$1.29</li>
+        <ul class="cartContent" ng-repeat="item in items">
+          <li class="title">{{item.title}}</li>
+          <li class="artist">{{item.artist}}</li>
+          <li class="price" ng-model="item.price">{{item.price}}</li>
+          <li class="quantity"><input class="qty" type="number" value=1 ng-model="item.qty"></input></li>
+          <li class="subTotal">{{item.price * item.qty}}</li>
         </ul>
         <div class="checkout">
           <div class="total">
-            <p>Total: $1.29</p>
+            <p>Total: {{total()| currency}}</p>
           </div>
           <div class="checkoutButton">
-            <a href="#/receipt"><p>Checkout</p></a>
+
+            <a href="#/receipt" ng-click="recieptFunc(tapeName)"><p>Checkout</p></a>
           </div>
         <div>
 

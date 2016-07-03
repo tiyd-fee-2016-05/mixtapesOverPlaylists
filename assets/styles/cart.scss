@@ -130,13 +130,17 @@ body{
     font-weight: 700;
   }
   .checkoutButton{
-    width: 10%;
+    width: 20%;
     text-align: center;
     height: 22px;
     background: $headerColor;
     //border: 1px solid $headerColor;
     color: white;
     margin-left: 88%;
+		a{
+			text-decoration: none;
+
+		}
     :hover{
       height: 22px;
       background-color: lightgrey;

@@ -99,10 +99,12 @@ body {
     margin-left: 100px; }
 
 .add {
-  width: 40px;
-  border: 1px solid black;
+  width: 60px;
   margin: 10px 0px;
   padding: 10px 10px;
-  text-align: center; }
+  text-align: center;
+  background-color: #d234f0; }
+  .add p {
+    color: white; }
 
 /*# sourceMappingURL=admin.css.map */

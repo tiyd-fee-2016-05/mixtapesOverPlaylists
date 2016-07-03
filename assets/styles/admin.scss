@@ -122,10 +122,14 @@ body{
   }
 }
 .add{
-  width: 40px;
-  border: 1px solid black;
+  width: 60px;
+  // border: 1px solid black;
   margin: 10px 0px;
   padding: 10px 10px;
   text-align: center;
+	background-color: $headerColor;
+	p{
+		color: white;
+	}
 
 }

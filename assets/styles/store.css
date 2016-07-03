@@ -75,7 +75,12 @@ body {
     font-size: 1.75em;
     color: white;
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin-left: 400px; }
+    .header h1 a {
+      float: left;
+      color: white;
+      text-decoration: none; }
 
 #searchBar {
   float: right;
@@ -182,7 +187,7 @@ body {
   height: 750px;
   width: 921px;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 9999999;
+  z-index: 999993874834837438743899;
   -webkit-transition: opacity 800ms ease-in;
   -moz-transition: opacity 800ms ease-in;
   transition: opacity 800ms ease-in;
@@ -210,17 +215,19 @@ body {
     margin-top: -41px;
     margin-left: 66px; }
 
-.exit p {
-  display: inline-block;
-  z-index: 10000000000000000000000000000;
-  width: 20%; }
-.exit i {
-  position: relative;
-  display: block;
-  text-align: right;
-  margin-right: 35px;
-  margin-top: 27px;
-  z-index: 10000000000000000000000; }
+.exit {
+  z-index: 347932482938428394829849823948928349829849283948290384928409238; }
+  .exit p {
+    display: inline-block;
+    z-index: 10000000000000000000000000000;
+    width: 20%; }
+  .exit i {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-right: 35px;
+    margin-top: 27px;
+    z-index: 10000000000000000000000; }
 
 .tracks {
   margin-left: 300px;

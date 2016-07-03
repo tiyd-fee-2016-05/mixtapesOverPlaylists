@@ -106,12 +106,14 @@ body {
     padding: 15px 0px;
     font-weight: 700; }
   .checkout .checkoutButton {
-    width: 10%;
+    width: 20%;
     text-align: center;
     height: 22px;
     background: #d234f0;
     color: white;
     margin-left: 88%; }
+    .checkout .checkoutButton a {
+      text-decoration: none; }
     .checkout .checkoutButton :hover {
       height: 22px;
       background-color: lightgrey;

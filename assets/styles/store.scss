@@ -84,6 +84,7 @@ body{
   @include container;
   width: 1120px;
   z-index: -3939393939393;
+  // background-color: black;
 
 }
 
@@ -100,6 +101,13 @@ body{
     color: white;
     text-align: center;
     padding-top: 20px;
+    margin-left: 400px;
+    a{
+      float: left;
+      color: white;
+      text-decoration: none;
+      // padding-left: -5000px;
+    }
 
   }
 
@@ -255,7 +263,7 @@ button{
   height: 750px;
   width: 921px;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 9999999;
+  z-index: 999993874834837438743899;
   -webkit-transition: opacity 800ms ease-in;
   -moz-transition: opacity 800ms ease-in;
   transition: opacity 800ms ease-in;
@@ -291,6 +299,7 @@ button{
 }
 
 .exit{
+  z-index: 347932482938428394829849823948928349829849283948290384928409238;
   p{
     // position: absolute;
     display: inline-block;
