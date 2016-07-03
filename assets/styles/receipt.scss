@@ -86,8 +86,14 @@ body{
   width: 150px;
   text-align: center;
   font-size: 1.25em;
-  border: 1px solid black;
+  // border: 1px solid black;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+	background: $headerColor;
+
+	a{
+		text-decoration: none;
+		color: white;
+	}
 }
