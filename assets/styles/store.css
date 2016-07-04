@@ -69,7 +69,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  background-color: #d234f0; }
+  background: linear-gradient(to bottom, #ab82b2 100%, rgba(214, 197, 219, 0) 100%); }
   .header h1 {
     font-family: "Permanent Marker", cursive;
     font-size: 1.75em;
@@ -151,13 +151,13 @@ body {
   display: inline-block;
   position: relative;
   height: 750px;
-  background-color: #DECEE1;
+  background: linear-gradient(to bottom, #ab82b2 38%, rgba(214, 197, 219, 0) 100%);
   margin-left: 0; }
   .sidebar img {
     padding-left: 60px; }
     .sidebar img:hover {
       transform: rotateX(360deg);
-      transition-duration: 1.2s; }
+      transition-duration: 1.5s; }
 
 #top-ul {
   height: 750px;
@@ -182,12 +182,12 @@ body {
     padding-left: 15px; }
 
 .modal {
+  z-index: 999993874834837438743899;
   position: absolute;
   font-family: "Space Mono", monospace;
   height: 750px;
   width: 921px;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 999993874834837438743899;
   -webkit-transition: opacity 800ms ease-in;
   -moz-transition: opacity 800ms ease-in;
   transition: opacity 800ms ease-in;
