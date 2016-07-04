@@ -8,7 +8,7 @@
 mOverP.controller('store', function($scope, $http ){
   ////MODAL!!!!!//////////
 
-  $scope.closeMenu=true;
+  $scope.closeMenu=false;
   $scope.showMenu=false;
   $scope.showItems=false;
 
@@ -22,9 +22,11 @@ mOverP.controller('store', function($scope, $http ){
   };
 
 
+
+
   doesThisWork = function(){
     console.log("Yup")
-  }
+  };
 
   ////RANDOM word to creat 9 tracks/////
   var loadTrack= ["metal", "solid", "grind", "follow", "iron", "yard", "cats", "sailor%20moon", "dogs", "smoke", "mirror", "magic", "cool", "virtual", "reality", "phone", "lemon", "next", "banana",

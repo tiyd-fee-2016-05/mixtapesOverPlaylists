@@ -162,11 +162,11 @@
 
 
 
-    <section  class="modal" ng-show="showMenu">
+    <section ng-click="modalFunc()" class="modal" ng-show="showMenu">
         <div ng-click="setActive(album)">
-        <p class="exit" ng-click="modalFunc(); doesThisWork()"><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></p>
-        <h1>{{albumMod.artist}} - {{albumMod.title}}</h1>
-        <input type="text"></input>
+        <a class="ng-show exit" ng-show="closeMenu" ><i class="fa fa-times-circle fa-2x" aria-hidden="true"></i></a>
+        <h1>{{albumMod.artist}} </br>"{{albumMod.title}}"</h1>
+        <!-- <input type="text"></input> -->
         <ul class="tracks">
           <span><img src={{albumMod.img}}></span>
           <li>Album: {{albumMod.album}}</li>
